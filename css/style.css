@@ -1,0 +1,89 @@
+/* Basic CSS for styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #7d5234;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #7d5234;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Home Page Styling */
+.intro {
+    margin-bottom: 40px;
+}
+
+.highlight {
+    margin-bottom: 40px;
+}
+
+.highlight-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+    .highlight-images img {
+        max-width: 300px; /* Adjust the maximum width as needed */
+        width: 100%; /* Ensure images scale within their container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+        .highlight-images img:hover {
+            transform: scale(1.05);
+        }
+
+/* Image Gallery Styling */
+.gallery {
+    margin: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+    .gallery-grid img {
+        max-width: 500px; /* Adjust the maximum width as needed */
+        width: 100%; /* Ensure images scale within their container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
