@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #7d5234;
+    background-color: #834418;
     color: white;
     padding: 20px;
     text-align: center;
@@ -31,7 +31,7 @@ main {
 }
 
 footer {
-    background-color: #7d5234;
+    background-color: #834418;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -87,3 +87,67 @@ footer {
         .gallery-grid img:hover {
             transform: scale(1.05);
         }
+
+/* Responsive Design */
+
+/* Adjust navigation and header padding for small screens */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Stack highlight images vertically on smaller screens */
+@media (max-width: 600px) {
+    .highlight-images {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+        .highlight-images img {
+            max-width: 100%;
+        }
+}
+
+/* Adjust gallery grid layout for small screens */
+@media (max-width: 768px) {
+    .gallery {
+        margin: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding: 10px;
+    }
+}
+
+/* Ensure good readability on very small screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        padding: 5px;
+        gap: 10px;
+    }
+}
