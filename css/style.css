@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #834418;
+    background-color: #360b0b;
     color: white;
     padding: 20px;
     text-align: center;
@@ -31,7 +31,7 @@ main {
 }
 
 footer {
-    background-color: #834418;
+    background-color: #360b0b;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -77,8 +77,8 @@ footer {
 }
 
     .gallery-grid img {
-        max-width: 500px; /* Adjust the maximum width as needed */
-        width: 100%; /* Ensure images scale within their container */
+        max-width: 100%; /* Ensure images scale within their container */
+        width: 100%; /* Ensure images fill their grid cells */
         height: auto; /* Maintain aspect ratio */
         border-radius: 8px;
         transition: transform 0.3s ease;
