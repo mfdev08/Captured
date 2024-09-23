@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography - Explore My Work</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navBar.css">
 </head>
 <body>
     <header>
-        <h1>Photography - Explore My Work</h1>
+        <h2>Explore My Work</h2>
     </header>
 
     <nav>
@@ -20,31 +21,109 @@
         <section class="gallery">
             <h2>Image Gallery</h2>
             <div class="gallery-grid">
-                <img src="images/lake-house.JPG" alt="">
-                <img src="images/castle.JPG" alt="">
-                <img src="images/moon.JPG" alt="">
-                <img src="images/acorn.JPG" alt="">
-                <img src="images/avacado-seed.JPG" alt="">
-                <img src="images/spider.JPG" alt="">
-                <img src="images/blackberry.JPG" alt="">
-                <img src="images/books.JPG" alt="">
-                <img src="images/gate.JPG" alt="">
-                <img src="images/lake.JPG" alt="">
-                <img src="images/aurora.JPG" alt="">
-                <img src="images/redberry.JPG" alt="">
-                <img src="images/rose.JPG" alt="">
-                <img src="images/sunset.JPG" alt="">
-                <img src="images/wood.JPG" alt="">
-                <img src="images/lake.JPG" alt="">
-                <img src="images/window.JPG" alt="">
-                <img src="images/yellow.JPG" alt="">
-                <img src="images/hut.JPG" alt="">
+                <img src="images/lake-house.JPG" alt="Lake House" onclick="openModal(this)">
+                <img src="images/castle.JPG" alt="Castle" onclick="openModal(this)">
+                <img src="images/moon.JPG" alt="Moon" onclick="openModal(this)">
+                <img src="images/acorn.JPG" alt="Acorn" onclick="openModal(this)">
+                <img src="images/avacado-seed.JPG" alt="Avocado Seed" onclick="openModal(this)">
+                <img src="images/spider.JPG" alt="Spider" onclick="openModal(this)">
+                <img src="images/blackberry.JPG" alt="Blackberry" onclick="openModal(this)">
+                <img src="images/books.JPG" alt="Books" onclick="openModal(this)">
+                <img src="images/gate.JPG" alt="Gate" onclick="openModal(this)">
+                <img src="images/lake.JPG" alt="Lake" onclick="openModal(this)">
+                <img src="images/aurora.JPG" alt="Aurora" onclick="openModal(this)">
+                <img src="images/redberry.JPG" alt="Redberry" onclick="openModal(this)">
+                <img src="images/rose.JPG" alt="Rose" onclick="openModal(this)">
+                <img src="images/sunset.JPG" alt="Sunset" onclick="openModal(this)">
+                <img src="images/wood.JPG" alt="Wood" onclick="openModal(this)">
+                <img src="images/bird.JPG" alt="Bird" onclick="openModal(this)">
+                <img src="images/yellow.JPG" alt="Yellow Flower" onclick="openModal(this)">
+                <img src="images/hut.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/bridge.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/river.JPG" alt="Blackberry" onclick="openModal(this)">
+                <img src="images/woodland.JPG" alt="Books" onclick="openModal(this)">
+                <img src="images/court.JPG" alt="Gate" onclick="openModal(this)">
+                <img src="images/tree.JPG" alt="Lake" onclick="openModal(this)">
+                <img src="images/black-door.JPG" alt="Aurora" onclick="openModal(this)">
+                <img src="images/door.JPG" alt="Redberry" onclick="openModal(this)">
+                <img src="images/cathedral-side.JPG" alt="Rose" onclick="openModal(this)">
+                <img src="images/cathedral-front.JPG" alt="Sunset" onclick="openModal(this)">
+                <img src="images/pink-house.JPG" alt="Wood" onclick="openModal(this)">
+                <img src="images/white.JPG" alt="Lake" onclick="openModal(this)">
+                <img src="images/daisy.JPG" alt="Window" onclick="openModal(this)">
+                <img src="images/walk.JPG" alt="Yellow Flower" onclick="openModal(this)">
+                <img src="images/garden.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/orange.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/window.JPG" alt="Window" onclick="openModal(this)">
+                <img src="images/red.JPG" alt="Blackberry" onclick="openModal(this)">
+                <img src="images/park-tree.JPG" alt="Books" onclick="openModal(this)">
+                <img src="images/visteria.JPG" alt="Gate" onclick="openModal(this)">
+                <img src="images/ripple.JPG" alt="Lake" onclick="openModal(this)">
+                <img src="images/bird-flight.JPG" alt="Aurora" onclick="openModal(this)">
+                <img src="images/pigeon.JPG" alt="Redberry" onclick="openModal(this)">
+                <img src="images/duck.JPG" alt="Rose" onclick="openModal(this)">
+                <img src="images/path.JPG" alt="Sunset" onclick="openModal(this)">
+                <img src="images/dry-tree.JPG" alt="Wood" onclick="openModal(this)">
+                <img src="images/owl.JPG" alt="Lake" onclick="openModal(this)">
+                <img src="images/pink-flower.JPG" alt="Window" onclick="openModal(this)">
+                <img src="images/feild.JPG" alt="Yellow Flower" onclick="openModal(this)">
+                <img src="images/feild-path.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/horse-black.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/horse-side.JPG" alt="Blackberry" onclick="openModal(this)">
+                <img src="images/horse-front.JPG" alt="Books" onclick="openModal(this)">
+                <img src="images/horses.JPG" alt="Gate" onclick="openModal(this)">
+                <img src="images/colourful-sky.JPG" alt="Lake" onclick="openModal(this)">
+                <img src="images/dry-acorn.JPG" alt="Aurora" onclick="openModal(this)">
+                <img src="images/orange-sky.JPG" alt="Redberry" onclick="openModal(this)">
+                <img src="images/hogwarts.JPG" alt="Rose" onclick="openModal(this)">
+                <img src="images/tea-books.JPG" alt="Sunset" onclick="openModal(this)">
+                <img src="images/candle.JPG" alt="Wood" onclick="openModal(this)">
+                <img src="images/lamp.JPG" alt="Lake" onclick="openModal(this)">
+                <img src="images/angel.JPG" alt="Window" onclick="openModal(this)">
+                <img src="images/flower-girl.JPG" alt="Yellow Flower" onclick="openModal(this)">
+                <img src="images/purple.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/green.JPG" alt="Hut" onclick="openModal(this)">
+                <img src="images/blue.JPG" alt="Rose" onclick="openModal(this)">
+                <img src="images/brown.JPG" alt="Sunset" onclick="openModal(this)">
+                <img src="images/crimson.JPG" alt="Wood" onclick="openModal(this)">
+                <img src="images/dried-acorn.JPG" alt="Lake" onclick="openModal(this)">
             </div>
         </section>
     </main>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
     <footer>
         <p>&copy; 2024 My Photography Website</p>
     </footer>
+
+    <script>
+    // Function to open the modal and display the clicked image
+    function openModal(img) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src; // Set the modal image source to the clicked image source
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+
+    // Close the modal when clicking anywhere outside the modal image
+    window.onclick = function(event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) { // Check if the clicked target is the modal background
+            closeModal(); // Close the modal
+        }
+    }
+    </script>
+
 </body>
 </html>

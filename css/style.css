@@ -1,6 +1,6 @@
 /* Basic CSS for styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -11,6 +11,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    font-family: 'Inconsolata', monospace;
 }
 
 nav {
@@ -23,6 +24,7 @@ nav {
         text-decoration: none;
         color: #333;
         font-weight: bold;
+        font-family: 'Inconsolata', monospace;
     }
 
 main {
@@ -35,6 +37,7 @@ footer {
     color: white;
     padding: 10px 0;
     text-align: center;
+    font-family: 'Inconsolata', monospace;
 }
 
 /* Home Page Styling */
@@ -87,6 +90,90 @@ footer {
         .gallery-grid img:hover {
             transform: scale(1.05);
         }
+
+
+/* Modal */
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10; /* Ensure it's above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    overflow: auto; /* Enable scrolling for tall images */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Ensure the modal image doesn't exceed 90% of the screen width */
+    max-height: 90%; /* Ensure the modal image doesn't exceed 90% of the screen height */
+    width: auto;
+    height: auto;
+}
+
+.modal-content {
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Responsive adjustments for modal */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 80%; /* Reduce modal width for smaller screens */
+        max-height: 80%; /* Reduce modal height for smaller screens */
+    }
+
+    .close {
+        font-size: 30px; /* Reduce close button size for smaller screens */
+        top: 10px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .close {
+        font-size: 25px;
+        top: 5px;
+        right: 15px;
+    }
+}
 
 /* Responsive Design */
 
